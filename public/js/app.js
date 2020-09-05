@@ -2007,7 +2007,7 @@ __webpack_require__.r(__webpack_exports__);
         duration: this.duration,
         genre: this.genre
       }).then(function (res) {
-        alert('Ok');
+        alert('Added');
         $('#exampleModal').modal('hide');
 
         _this2.getMovies();
@@ -2035,6 +2035,8 @@ __webpack_require__.r(__webpack_exports__);
         $('#exampleModal').modal('hide');
 
         _this3.getMovies();
+
+        _this3.editMode = false;
 
         _this3.clearValues();
       });

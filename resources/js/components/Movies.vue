@@ -94,7 +94,7 @@
                     duration: this.duration,
                     genre: this.genre
                 }).then((res)=>{
-                    alert('Ok')
+                    alert('Added')
                     $('#exampleModal').modal('hide')
                     this.getMovies()
                 })
@@ -118,6 +118,7 @@
                     alert('Updated')
                     $('#exampleModal').modal('hide')
                     this.getMovies()
+                    this.editMode = false
                     this.clearValues()
                 })
             },
